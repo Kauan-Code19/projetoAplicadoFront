@@ -1,34 +1,32 @@
-<div class="background d-flex justify-content-center align-items-center h-100">
-  <div class="container p-4">
-      <div class="row text-center">
-      
-        <div class="col-md-4" (click)="navigateEcopontos()">
-          <div class="card shadow p-3 mb-5 rounded hover-card">
-            <div class="card-body">
-              <h5 class="card-title">Ecopontos</h5>
-              <p class="card-text text-light-emphasis">Saiba Mais Sobre o Descarte Gratuito.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" (click)="navigateDiasHorarios()">
-          <div class="card shadow p-3 mb-5 rounded hover-card">
-            <div class="card-body">
-              <h5 class="card-title">Dias e Horários</h5>
-              <p class="card-text text-light-emphasis">Saiba Mais Sobre Turnos de Coleta</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4" (click)="navigateDicas()">
-          <div class="card shadow p-3 mb-5 rounded hover-card">
-            <div class="card-body">
-              <h5 class="card-title">Dicas</h5>
-              <p class="card-text text-light-emphasis">Saiba Mais Sobre Coleta e Reciclagem</p>
-            </div>
+<div class="container-fluid flex-column background d-flex justify-content-center align-items-center h-100">
+  <section class="full-screen">
+    <div class="row">
+      <div class="col-md-4" (click)="navigateEcopontos()">
+        <div class="card shadow p-3 mb-5 rounded hover-card">
+          <div class="card-body">
+            <h5 class="card-title">Ecopontos</h5>
+            <p class="card-text text-light-emphasis">Saiba Mais Sobre o Descarte Gratuito.</p>
           </div>
         </div>
       </div>
-  </div>
-</div>
   
+      <div class="col-md-4" (click)="navigateDiasHorarios()">
+        <div class="card shadow p-3 mb-5 rounded hover-card">
+          <div class="card-body">
+            <h5 class="card-title">Dias e Horários</h5>
+            <p class="card-text text-light-emphasis">Saiba Mais Sobre Turnos de Coleta</p>
+          </div>
+        </div>
+      </div>
+          
+      <div class="col-md-4" (click)="navigateDicas()">
+        <div class="card shadow p-3 mb-5 rounded hover-card">
+          <div class="card-body">
+            <h5 class="card-title">Dicas</h5>
+            <p class="card-text text-light-emphasis">Saiba Mais Sobre Coleta e Reciclagem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
