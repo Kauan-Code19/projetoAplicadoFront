@@ -1,0 +1,20 @@
+.background {
+    background-color: #A5D6A7;
+}
+
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Suaviza o efeito */
+}
+  
+.hover-card:hover {
+  transform: translateY(-10px); /* Eleva o card */
+}
+
+.card {
+    height: 145px; /* Altura fixa */
+    background-color: #F5F5F5;
+}
+
+h5 {
+    color: #388E3C;
+}
