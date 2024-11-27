@@ -1,0 +1,15 @@
+.background {
+    background-color: #A5D6A7;
+}
+
+.card, select, input {
+    background-color: #F5F5F5;
+}
+
+h3 {
+    color: #388E3C;
+}
+
+.container-fluid {
+    min-height: 100vh
+}
