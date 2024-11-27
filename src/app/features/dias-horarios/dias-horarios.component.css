@@ -10,6 +10,12 @@ h3 {
     color: #388E3C;
 }
 
-.container-fluid {
-    min-height: 100vh
+
+.full-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centraliza o conteúdo verticalmente */
+    align-items: center;  /* Centraliza o conteúdo horizontalmente */
+    height: 100vh;  /* Garante que cada seção ocupe 100% da tela */  /* Ajusta o padding conforme necessário */
+    box-sizing: border-box;  /* Inclui o padding no cálculo do tamanho */
 }
