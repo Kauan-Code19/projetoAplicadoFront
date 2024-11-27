@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { WindowsComponent } from './f/windows/windows.component';
+import { WindowsComponent } from './features/windows/windows.component';
 
 export const routes: Routes = [
     {path: 'windows', component: WindowsComponent},
