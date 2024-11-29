@@ -1,0 +1,23 @@
+.background {
+    background-color: #A5D6A7;
+    
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #F5F5F5;
+    max-width: 800px;
+}
+
+
+h3 {
+    color: #388E3C;
+}
