@@ -53,14 +53,23 @@
 
             <div class="mb-3 text-center p-2">
                 <label for="selectBairro" class="form-label text-light-emphasis">Escolha seu bairro</label>
-                <select id="selectBairro" class="form-select form-select-sm">
-                  <option value="" selected disabled>Selecione um bairro</option>
+                <select 
+                    id="selectBairro"
+                    class="form-select form-select-sm"
+                    [(ngModel)]="selectedDistrictForViewEcopoint" 
+                    (change)="onDistrictSelected(selectedDistrictForViewEcopoint)">
+                    <option value="" selected disabled>Selecione um bairro</option>
+                    <option *ngFor="let district of districts" [value]="district.name">
+                      {{ district.name }}
+                    </option>
                 </select>
             </div>
 
-            <div class="card p-2 d-none">
-                <div class="card-body">
-                  <p class="card-text"><strong>Endereço:</strong> <span id="endereco"></span></p>
+            <div class="card p-2" *ngIf="ecopoints.length > 0">
+                <div *ngFor="let ecopoint of ecopoints">
+                    <div class="card-body">
+                      <p class="card-text"><strong>Endereço: </strong> <span>{{ ecopoint.address }}</span></p>
+                    </div>
                 </div>
             </div>
         </div>
